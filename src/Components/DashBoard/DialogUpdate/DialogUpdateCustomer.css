@@ -1,0 +1,67 @@
+.Dialog-Update-Customer{
+    padding: 15px;
+}
+
+.Dialog-Update-Customer form{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2em;
+    margin: 15px;
+}
+
+form #Top-Dialog-Update{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(3,1fr);
+}
+
+form #Mid-Dialog-Update{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(3,1fr);
+}
+
+form #Mid-Dialog-Update input:nth-child(2){
+    margin: 0;
+    filter: blur(calc(3px * var(--blur, 1)));
+    transition: filter var(--speed, 1.5s);
+}
+
+form #Mid-Dialog-Update input:nth-child(2):hover{
+    --blur: 0;
+    --speed: 0.1s;
+}
+
+form #Bot-Dialog-Update{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(2,1fr);
+    place-content: center;
+}
+
+form #Submit-Dialog-Update{
+    display: grid;
+    place-content: center;
+}
+
+form #Submit-Dialog-Update input{
+    text-align: center;
+    border: 2px solid  #d3a357;
+    border-radius: 8px;
+    color: white;
+    background-color: #01273c;
+    font-size: 16px;
+    height: 32px;
+}
+
+form #Submit-Dialog-Update input:hover{
+    cursor: pointer;
+    background-color: rgba(33, 115, 181)
+}
+
+.Dialog-Update-Customer form input{
+    text-align: center;
+    height: 22px;
+    border: 2px solid  #01273c;
+    border-radius: 8px;
+}

@@ -1,0 +1,65 @@
+.Dialog-Update-Recipe form{
+    display: grid;
+    grid-template-rows: repeat(4,100px, 100px, 1fr, 50px);
+}
+
+.Dialog-Update-Recipe form #Top-Recipe-Update{
+    justify-self: center;
+    align-self: center;
+}
+
+.Dialog-Update-Recipe form #Top-Recipe-Update input{
+    text-align: center;
+    font-size: 24px;
+}
+
+.Dialog-Update-Recipe form #TopInfo-Recipe-Update{
+    display: grid;
+    place-items: center;
+    margin: 10px;
+}
+
+.Dialog-Update-Recipe form #TopInfo-Recipe-Update input{
+    text-align: center;
+    width: 80px;
+    margin: 5px;
+}
+
+.Dialog-Update-Recipe form #TopInfo-Recipe-Update div label{
+    font-size: 15px;
+}
+
+.Dialog-Update-Recipe input{
+    border: #01273c 2px solid;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.UL-Recipe-Update{
+    margin: 0;
+}
+
+#Mid-Recipe-Update h3{
+    margin: 0;
+    padding: 0;
+}
+
+#Bot-Recipe-Update{
+    justify-self: center;
+    align-self: center;
+}
+
+#Bot-Recipe-Update input{
+    border: 2px solid #d3a357;
+    border-radius: 8px;
+    background-color: #01273c;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#Bot-Recipe-Update input:hover{
+    cursor: pointer;
+    background-color: #237cae;
+}

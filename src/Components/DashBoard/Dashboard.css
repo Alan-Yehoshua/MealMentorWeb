@@ -1,0 +1,84 @@
+.Dashboard-Div{
+    display: grid;
+    place-items: center;
+    margin: 5px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.customer-dialog {
+    position: fixed;
+    z-index: 20;
+    border: #01273C 2px solid;
+    border-radius: 5px;
+}
+
+.customer-dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box{
+    display: flex;
+    height: 90vh;
+    width: 75%;
+    gap: 1.5em;
+}
+
+.Dashboard{
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.Customers-Box{
+    border: 3px solid #01273C;
+    border-radius: 10px;
+    height: 50%;
+    width: 99.5%;
+    box-sizing: border-box;
+    overflow: auto;
+    text-overflow: ellipsis;
+    inset: 0;
+}
+
+.Dashboard-RepTip{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    justify-content: space-around;  
+}
+
+.Recipes-Box{
+    border: 3px solid #01273C;
+    border-radius: 10px;
+    height: 95%;
+    width: 40%;
+    box-sizing: border-box;
+    overflow: auto;
+    text-overflow: ellipsis;
+    inset: 0;
+}
+
+.Tips-Box{
+    border: 3px solid #01273C;
+    border-radius: 10px;
+    height: 95%;
+    width: 40%;
+    box-sizing: border-box;
+    overflow: auto;
+    text-overflow: ellipsis;
+    inset: 0;
+}

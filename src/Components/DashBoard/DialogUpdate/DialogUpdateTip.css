@@ -1,0 +1,59 @@
+.Dialog-Update-Tip form{
+    display: grid;
+    grid-template-rows: 25px 1fr;
+    place-items: center;
+    gap: 1em;
+}
+
+.Dialog-Update-Tip form input{
+    border: 2px solid #01273c;
+    border-radius: 5px;
+    font-family: system-ui;
+    text-align: center;
+    font-size: 18px;
+}
+
+#Mid-Recipe-Update input{
+    border: 2px solid #01273c;
+    border-radius: 5px;
+    font-family: system-ui;
+    font-size: 18px;
+    width: 100%;
+}
+
+#Mid-Recipe-Update h3{
+    margin: 5px;
+}
+
+.UL-Recipe-Update{
+    padding: 0;
+    margin: 0;
+}
+
+.UL-Recipe-Update > li{
+    margin: 5px;
+}
+
+.Dialog-Update-Tip form input:last-child{
+    background-color: #01273c;
+    border: 2px solid #d3a357;
+    color: white;
+    border-radius: 5px;
+    font-family: system-ui;
+    text-align: center;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.Dialog-Update-Tip form input:last-child:hover{
+    cursor: pointer;
+    background-color: #237cae;
+}
+
+.Dialog-Update-Tip form textarea{
+    resize: none;
+    border: 2px solid #01273c;
+    border-radius: 7px;
+    font-family: system-ui;
+    font-size: 22px;
+}

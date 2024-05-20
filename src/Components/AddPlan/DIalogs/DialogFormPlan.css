@@ -1,0 +1,67 @@
+#Form-Dialog-Plan{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1em 2em;
+}
+
+#Form-Dialog-Plan #submit-button-plan{
+    border: 2px solid goldenrod;
+    background-color: #01273C;
+    color: white;
+    font-size: 16px;
+    place-self: center;
+    width: 50%;
+    height: 20%;
+}
+
+#Form-Dialog-Plan #submit-button-plan:hover{
+    cursor: pointer;
+    background-color: #15587c;
+}
+
+#form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-box label{
+    font-size: 20px;
+}
+
+#form-box input{
+    font-size: 18px;
+    margin: 5px;
+    border: 2px solid #01273C;
+    border-radius: 5px;
+    width: 14%;
+    padding: 0;
+    text-align: center;
+}
+
+#textarea-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#date-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#date-box > input{
+    width: 80%;
+}
+
+#textarea-day{
+    border: 2px solid #01273C;
+    border-radius: 5px;
+    resize: none;
+    height: 125px;
+}

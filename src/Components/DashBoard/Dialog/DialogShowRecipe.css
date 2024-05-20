@@ -1,0 +1,35 @@
+#Dialog-Box-Recipe{
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(1fr, 2fr));
+    box-sizing: border-box;
+    overflow: auto;
+    text-overflow: ellipsis;
+    inset: 0;
+    width: 400px;
+}
+
+#Info-Dialog-Recipe{
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+#Info-Dialog-Recipe p{
+    margin: 0;
+    font-size: 16px;
+}
+
+#Ingredient-Dialog-Recipe h3{
+    margin: 0;
+}
+
+#Steps-Dialog-Recipe h3{
+    margin: 5px 0 0 0;
+}
+
+#ul-ingredient{
+    margin: 0;
+}
+
+#ul-step{
+    margin: 0 0 5px 0;
+}

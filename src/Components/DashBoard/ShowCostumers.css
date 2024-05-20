@@ -1,0 +1,120 @@
+#ul-customer{
+    padding: 0;
+    margin: 0;
+}
+
+#closeDialog{
+    border: 1px solid #D3A357;
+    border-radius: 5px;
+    background-color: #01273C;
+    color: white;
+    height: 30px;
+}
+
+#closeDialog:hover{
+    cursor: pointer;
+    background-color: #045C8C;
+}
+
+#ul-customer li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 3px solid #D3A357;
+    border-radius: 10px;
+    justify-content: space-between;
+    height: 85px;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#ul-customer li p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 30rem;
+}
+
+#ul-customer li span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 30rem;
+}
+
+#ul-customer li > p{
+    direction: ltr;
+}
+
+#ul-customer li > span{
+    direction: ltr;
+}
+
+.box-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.box-right img{
+    height: 50px;
+    width: 50px;
+}
+
+.box-right div .Fullname{
+    font-size: 24px;
+    margin: 0;
+}
+
+.box-right div .info-customer{
+    margin: 0;
+}
+
+.box-left{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.Circle:first-child{
+    border: 2px solid #DA8C1080;
+}
+
+.Circle:last-child{
+    border: 2px solid #045C8C80;
+}
+
+.Circle:first-child:hover{
+    cursor: pointer;
+    border: 2px solid #DA8C10;
+}
+
+.Circle:nth-child(2):hover{
+    cursor: pointer;
+    
+}
+
+.Circle:last-child:hover{
+    cursor: pointer;
+    border: 2px solid ;
+}
+
+
+.Circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius:50px;
+    height: 45px;
+    width: 45px;
+}
+
+.Circle p{
+    margin: 5px;
+}

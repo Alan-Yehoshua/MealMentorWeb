@@ -1,0 +1,65 @@
+.Navigation{
+    height: 100%;
+    width: 20%;
+    background-color: #ecececbf;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.Navigation > aside{
+    width: 100%;
+    display: grid;
+    gap: 2em;
+    grid-template-rows: repeat(4,1fr);
+    place-content: center;
+}
+
+aside div button{
+    width: 100%;
+    border: 0;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+aside div button:hover{
+    color: #EE9200;
+    cursor: pointer;
+}
+
+aside img{
+    height: 28px;
+    width: 23px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos para pantallas con un ancho máximo de 768px (tablets y dispositivos móviles) */
+    .Navigation {
+        width: 100%;
+    }
+
+    .Navigation button {
+        width: 80%;
+    }
+
+    .navbar img {
+        width: 15vw;
+    }
+
+    .title {
+        font-size: 6vw;
+    }
+
+    .Box {
+        flex-direction: column;
+    }
+
+    .Customers-Box,
+    .Recipes-Box,
+    .Tips-Box {
+        width: 95%;
+    }
+}

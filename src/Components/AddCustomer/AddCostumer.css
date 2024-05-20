@@ -1,0 +1,156 @@
+.Addcustomer-Div{
+    display: grid;
+    place-items: center;
+    margin: 5px;
+}
+
+.Box{
+    display: flex;
+    height: 90vh;
+    width: 75%;
+    gap: 1.5em;
+}
+
+.Form-Box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 76.5%;
+    height: 100%;
+}
+
+.Formulary{
+    height: 50%;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.Formulary section{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    gap: 2em;
+}
+
+.Formulary section.checkbox-sec{
+    gap: 0;
+    width: 5%;
+    display: grid;
+    place-items: center;
+}
+
+.Formulary input.input-abs{
+    border: 2px solid #01273C;
+    border-radius: 5px;
+    text-align: center;
+    height: 28px;
+    width: 160px;
+}
+
+.Formulary input.input-abs-large{
+    border: 2px solid #01273C;
+    border-radius: 5px;
+    text-align: center;
+    height: 28px;
+    width: 190px;
+}
+
+.Formulary input.button-submit{
+    border: 2px solid #D3A357;
+    border-radius: 5px;
+    background-color: #01273C;
+    color: white;
+    text-align: center;
+    height: 35px;
+    width: 120px;
+}
+
+
+.Formulary input.button-submit:hover{
+    cursor: pointer;
+    background-color: #15587c;
+}
+
+.Customer-Card{
+    height: 45%;
+    width: 30%;
+    border: 3px solid #D3A357;
+    border-radius: 25px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    overflow: auto;
+}
+
+.Customer-Card section.Top-card img{
+    height: 71px;
+    width: 70px;
+}
+
+.Customer-Card section.Top-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.Customer-Card section.Top-card p{
+    margin: 0;
+}
+
+.Customer-Card section.Top-card p:first-child{
+    font-size: 22px;
+}
+.Customer-Card section.Top-card p:last-child{
+    font-size: 13px;
+}
+
+.Customer-Card section.Mid-card{
+    display: flex;
+    padding: 5px;
+    margin: 0;
+}
+
+.Customer-Card section.Mid-card p{
+    margin: 2px;
+    font-size: 18px;
+}
+
+.Customer-Card section.Down-card{
+    display: flex;
+    padding: 5px;
+    margin: 0;
+}
+
+.Customer-Card section.Down-card p{
+    margin: 2px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .Customer-Card{
+        width: 100%;
+        height: 75%;
+    }
+    .Formulary{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-content: center;
+    }
+
+    .Addcustomer-Div{
+        width: 90%;
+    }
+
+    .Formulary section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

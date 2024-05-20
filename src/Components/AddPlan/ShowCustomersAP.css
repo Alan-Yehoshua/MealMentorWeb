@@ -1,0 +1,78 @@
+.Plan-Customer-Card{
+    border: 2px solid #21658C;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    place-content: center;
+}
+
+.ul-plan{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
+    place-content: center;
+    grid-gap: 1.5em;
+    width: 100%;
+    padding: 0;
+}
+
+.Plan-Customer-Card img{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+.Plan-Card-Top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.Plan-Card-Top p{
+    margin: 0;
+}
+
+.Plan-Card-Top span{
+    margin: 0;
+    font-size: 14px;
+}
+
+.Plan-Card-Bot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circle-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius:50px;
+    height: 45px;
+    width: 45px;
+    border: 2px solid #DA8C1080;
+}
+
+.circle-add:hover{
+    cursor: pointer;
+    border: 2px solid #DA8C10;
+}
+
+.circle-upd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius:50px;
+    height: 45px;
+    width: 45px;
+    border: 2px solid #045C8C80;
+}
+
+.circle-upd:hover{
+    cursor: pointer;
+    border: 2px solid #045C8C;
+}

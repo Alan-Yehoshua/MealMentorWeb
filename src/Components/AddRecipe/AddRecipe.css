@@ -1,0 +1,157 @@
+.Addrecipe-Div{
+    display: grid;
+    place-items: center;
+    margin: 5px;
+}
+
+.Box{
+    display: flex;
+    height: 90vh;
+    width: 80%;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.Recipe-Box{
+    border: 3px solid goldenrod;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 40%;
+    height: 95%;
+}
+
+.Image-Recipe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #01273C;
+    border-radius: 10px;
+    width: 25%;
+    height: 40%;
+    justify-self: center;
+    align-self: center;
+}
+
+.Recipe-Box > .Recipe-Form{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 150px 1fr 1fr;
+}
+
+.Recipe-Form .Top-Recipe{
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    place-items: center;
+    align-items: start;
+}
+
+
+.Recipe-Form .Top-Recipe label{
+    font-size: 15px;
+}
+
+.Recipe-Form .Top-Recipe input{
+    padding: 10px;
+    font-size: 24px;
+    border: 0;
+    width: 240px;
+    margin: 5px;
+    text-align: center;
+}
+
+.Recipe-Form .Top-Recipe .Top-Info input{
+    font-size: 12px;
+    border: 1px solid #01273C;
+    border-radius: 3px;
+    padding: 3px;
+    width: 60px;
+    margin: 5px;
+}
+
+.Ingredients{
+    padding: 10px;
+    overflow: auto;
+}
+
+.Ingredients > input{
+    width: 400px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.Ingredients > .delete-button{
+    width: 80px;
+    font-size: 16px;
+    background-color: #d0040480;
+    color: aliceblue;
+}
+
+.Ingredients > .delete-button:hover{
+    cursor: pointer;
+    background-color: #d00404;
+}
+.Ingredients > .add-button{
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+    background-color: #25ae0d80;
+    color: aliceblue;
+}
+
+.Ingredients > .add-button:hover{
+    cursor: pointer;
+    background-color: #25ae0d;
+}
+
+.Preferences{
+    padding: 10px;
+    overflow: auto;
+}
+
+.Preferences input{
+    width: 400px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.Preferences > .delete-button{
+    width: 80px;
+    font-size: 16px;
+    background-color: #d0040480;
+    color: aliceblue;
+}
+
+.Preferences > .delete-button:hover{
+    cursor: pointer;
+    background-color: #d00404;
+}
+.Preferences > .add-button{
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+    background-color: #25ae0d80;
+    color: aliceblue;
+}
+
+.Preferences > .add-button:hover{
+    cursor: pointer;
+    background-color: #25ae0d;
+}
+
+.Recipe-Form .add-recipe{
+    width: 100px;
+    justify-self: center;
+    padding: 5px;
+    margin: 6px;
+    border: 2px solid #D3A357;
+    border-radius: 5px;
+    background-color: #01273C;
+    color: white;
+}
+
+.Recipe-Form .add-recipe:hover{
+    cursor: pointer;
+    background-color: #15587c;
+}
