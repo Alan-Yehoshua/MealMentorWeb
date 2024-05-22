@@ -38,7 +38,7 @@ export function DialogUpdateRecipe({recipe}){
                     <input 
                     name='estimatedTime' 
                     type="number" 
-                    defaultValue={recipe.Duration}/>
+                    defaultValue={recipe.estimatedTime}/>
                     <label>Dificultad:</label>
                     <input 
                     name="Difficulty"

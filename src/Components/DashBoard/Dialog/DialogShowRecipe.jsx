@@ -7,7 +7,7 @@ export function DialogShowRecipe({recipe}){
     <section id="Dialog-Box-Recipe">
         <h1>{recipe.Title}</h1>
         <div id="Info-Dialog-Recipe">
-            <p>Dificultad: {recipe.Difficulty}/10 | Tiempo: {recipe.Duration}m</p>
+            <p>Dificultad: {recipe.Difficulty}/10 | Tiempo: {recipe.estimatedTime}m</p>
             <p>Precio: {recipe.Price} | Calorias: {recipe.Calories} | Horario: {recipe.schedule}</p>
         </div>
         <div id="Ingredient-Dialog-Recipe">
