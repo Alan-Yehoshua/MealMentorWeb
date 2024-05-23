@@ -110,3 +110,16 @@
     cursor: default;
     font-family: system-ui;
 }
+
+#Butoon-record{
+    height: 27px;
+    width: 88px;
+    border: 2px solid #d3a357;
+    background-color: #01273C;
+    color: #ffffff;
+}
+
+#Butoon-record:hover{
+    cursor: pointer;
+    background-color: #01273C80;
+}

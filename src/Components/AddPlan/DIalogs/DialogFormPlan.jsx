@@ -17,11 +17,11 @@ export function DialogFormPlan({customer}){
       setSelectedDate(event.target.value);
     };
 
-    const actualizarDocumento = async (documentId, newData) => {
+    const actualizarDocumento = async (documentId, newData, docu) => {
         try {
-            const docRef = doc(dataBase, 'Customers', documentId);
+            const docRef = doc(dataBase, docu, documentId);
             await updateDoc(docRef, newData);
-            console.log("Documento actualizado correctamente");
+            console.log(`${docu} actualizado correctamente`);
         } catch (error) {
             console.error("Error updating document: ", error);
         }
@@ -46,25 +46,56 @@ export function DialogFormPlan({customer}){
             console.error("Error adding document: ", error);
         }
 
-        const recordData = {
+        if(customer.record_ID === null && customer.plan_ID === null){        
+            const recordData = {
             customerID: customer.id,
             plan_ID: docRef.id,
             planAssignedDate: fields.startDate
+            }
+            try {
+                const addRecordRef = collection(dataBase,'Record');
+                docRefRecord = await addDoc(addRecordRef, recordData);
+            } catch (error) {
+                console.error("Error adding document: ", error);
+            }
+            const newDataCustomer = {
+                plan_ID: docRef.id,
+                record_ID: docRefRecord.id
+            }
+    
+            actualizarDocumento(customer.id, newDataCustomer, 'Customers');
+        }else {
+            const newRecordData = {
+                plan_ID: customer.plan_ID
+                };
+
+            (async () => {
+                    try {
+                        const docRef = doc(dataBase, 'Record', customer.record_ID);
+                        await updateDoc(docRef, newRecordData);
+                        console.log(`Record actualizado correctamente`);
+                    } catch (error) {
+                        console.error("Error updating document: ", error);
+                    }
+            })();
+
+            const newDataCustomer = {
+                plan_ID: docRef.id,
+                };
+
+            (async () => {
+                try {
+                    const docRef = doc(dataBase, 'Customers', customer.id);
+                    await updateDoc(docRef, newDataCustomer);
+                    console.log(`Custmers actualizado correctamente`);
+                } catch (error) {
+                    console.error("Error updating document: ", error);
+                }
+        })();
         }
 
-        try {
-            const addRecordRef = collection(dataBase,'Record');
-            docRefRecord = await addDoc(addRecordRef, recordData);
-        } catch (error) {
-            console.error("Error adding document: ", error);
-        }
 
-        const newDataCustomer = {
-            plan_ID: docRef.id,
-            record_ID: docRefRecord.id
-        }
 
-        actualizarDocumento(customer.id, newDataCustomer);
 
     }
 
@@ -83,7 +114,7 @@ export function DialogFormPlan({customer}){
                 <section id="Form-Dialog-Plan">
                 {arrayDays.map((index, day=1) => (
                     <>
-                    <li id='textarea-box' key={index}>
+                    <li id='textarea-box' key={day}>
                     <label>Dia {day+=1}</label>
                     <textarea
                     name={'Day'+day}

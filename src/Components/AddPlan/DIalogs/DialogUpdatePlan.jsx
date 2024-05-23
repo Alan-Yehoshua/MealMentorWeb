@@ -52,7 +52,7 @@ export function DialogUpdatePlan({customer}){
                 <section id="Form-Dialog-Plan">
                 {arrayDays.map((index, day=1) => (
                     <>
-                    <li id='textarea-box' key={index++}>
+                    <li id='textarea-box' key={index}>
                     <label>Dia {day+=1}</label>
                     <textarea
                     name={'Day'+day}
